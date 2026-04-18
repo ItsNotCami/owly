@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Owly — Discover books by category, powered by Open Library."
+    />
+    <title>Owly — Discover Books</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>"
+    />
+    <script type="module" crossorigin src="/assets/index-Bu7koQB0.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BYAfnc4n.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+      <a href="/" class="logo" aria-label="Owly homepage">
+        <div class="logo-icon">🦉</div>
+        <div>
+          <div class="logo-text">Owly</div>
+          <div class="logo-tagline">Book Discovery Platform</div>
+        </div>
+      </a>
+    </header>
+
+    <!-- HERO / SEARCH -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Find your next<br /><span>great read</span></h1>
+        <p>Search thousands of books by category, powered by Open Library.</p>
+
+        <form id="search-form" autocomplete="off">
+          <div class="search-wrapper">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Enter a category (e.g. fantasy, history…)"
+              aria-label="Book category"
+            />
+            <button type="submit" class="btn-search">Search</button>
+          </div>
+        </form>
+
+        <div class="suggestions" aria-label="Suggested categories">
+          <span class="suggestions-label">Try:</span>
+          <button class="suggestion-chip" data-subject="fantasy">
+            Fantasy
+          </button>
+          <button class="suggestion-chip" data-subject="science_fiction">
+            Sci-Fi
+          </button>
+          <button class="suggestion-chip" data-subject="mystery">
+            Mystery
+          </button>
+          <button class="suggestion-chip" data-subject="adventure">
+            Adventure
+          </button>
+          <button class="suggestion-chip" data-subject="history">
+            History
+          </button>
+          <button class="suggestion-chip" data-subject="romance">
+            Romance
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED CATEGORIES -->
+    <section class="featured-section" id="featured-section">
+      <div class="featured-inner">
+        <h2 class="featured-title">Explore by category</h2>
+        <p class="featured-subtitle">
+          Click on a genre to discover books hand-picked from Open Library.
+        </p>
+        <div class="category-grid">
+          <button class="category-card" data-subject="fantasy">
+            <span class="category-icon">🧙</span>
+            <span class="category-name">Fantasy</span>
+            <span class="category-desc">Magic, dragons and other worlds</span>
+          </button>
+          <button class="category-card" data-subject="science_fiction">
+            <span class="category-icon">🚀</span>
+            <span class="category-name">Sci-Fi</span>
+            <span class="category-desc">The future of humanity</span>
+          </button>
+          <button class="category-card" data-subject="mystery">
+            <span class="category-icon">🔍</span>
+            <span class="category-name">Mystery</span>
+            <span class="category-desc">Clues, suspects and twists</span>
+          </button>
+          <button class="category-card" data-subject="adventure">
+            <span class="category-icon">🗺️</span>
+            <span class="category-name">Adventure</span>
+            <span class="category-desc">Journeys beyond the horizon</span>
+          </button>
+          <button class="category-card" data-subject="history">
+            <span class="category-icon">🏛️</span>
+            <span class="category-name">History</span>
+            <span class="category-desc">Stories that shaped the world</span>
+          </button>
+          <button class="category-card" data-subject="romance">
+            <span class="category-icon">💛</span>
+            <span class="category-name">Romance</span>
+            <span class="category-desc">Love in all its forms</span>
+          </button>
+          <button class="category-card" data-subject="horror">
+            <span class="category-icon">👻</span>
+            <span class="category-name">Horror</span>
+            <span class="category-desc">Fear, suspense and the unknown</span>
+          </button>
+          <button class="category-card" data-subject="biography">
+            <span class="category-icon">✍️</span>
+            <span class="category-name">Biography</span>
+            <span class="category-desc">Real lives, real stories</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <h2 id="results-title" hidden></h2>
+
+      <div id="loading" hidden aria-live="polite">
+        <div class="spinner"></div>
+        <p>Searching books…</p>
+      </div>
+
+      <p id="error" hidden role="alert"></p>
+
+      <div id="results" aria-live="polite"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>
+        Owly &copy; 2025 &mdash; Book data from
+        <a href="https://openlibrary.org" target="_blank" rel="noopener"
+          >Open Library</a
+        >
+      </p>
+    </footer>
+
+    <!-- Scroll-aware header shadow -->
+    <script>
+      (function () {
+        const header = document.getElementById("site-header");
+        const onScroll = () => {
+          header.classList.toggle("scrolled", window.scrollY > 10);
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
+
+  </body>
+</html>
