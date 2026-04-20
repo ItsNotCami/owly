@@ -66,8 +66,10 @@ owly/
 │   │   ├── app.js
 │   │   ├── BookRepository.js
 │   │   └── UIRenderer.js
-│   └── css/
-│       └── style.css
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       └── screenshot.png
 └── tests/
     └── BookRepository.test.js
 ```
