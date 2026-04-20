@@ -13,7 +13,7 @@
 
 ## 📸 Screenshots
 
-> Add screenshots here after deploy.
+![Owly screenshot](src/img/Screenshot.png)
 
 ---
 
