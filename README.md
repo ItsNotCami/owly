@@ -56,20 +56,21 @@ npm test
 
 ## 📂 Project Structure
 
+```
 owly/
 ├── index.html
 ├── vite.config.js
+├── netlify.toml
 ├── src/
-│ ├── js/
-│ │ ├── app.js
-│ │ ├── BookRepository.js
-│ │ └── UIRenderer.js
-│ └── css/
-│ └── main.css
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── BookRepository.js
+│   │   └── UIRenderer.js
+│   └── css/
+│       └── style.css
 └── tests/
-└── BookRepository.test.js
-
----
+    └── BookRepository.test.js
+```
 
 ## 🛠️ Technologies
 
