@@ -7,7 +7,7 @@
 
 ## 🔗 Live Demo
 
-**[→ Try Owly online](#)** _(add Netlify link here after deploy)_
+**[→ Try Owly online](https://exquisite-beignet-5db120.netlify.app)**
 
 ---
 
